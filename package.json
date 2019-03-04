@@ -1,0 +1,22 @@
+{
+  "name": "mhsapi",
+  "version": "1.0.0",
+  "description": "mhs restful api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhsnet/mhsapi.git"
+  },
+  "author": "mhs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhsnet/mhsapi/issues"
+  },
+  "homepage": "https://github.com/mhsnet/mhsapi#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
