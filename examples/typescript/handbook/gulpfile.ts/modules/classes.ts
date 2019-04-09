@@ -1,3 +1,5 @@
-import * as people from './classes/people';
+import Admin from './classes/admin';
+import Super from './classes/super';
+import User from './classes/user';
 
-export { people };
+export { Admin, Super, User };

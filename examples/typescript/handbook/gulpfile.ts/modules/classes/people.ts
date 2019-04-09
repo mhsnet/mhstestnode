@@ -1,10 +1,20 @@
-import { PeopleI } from '../interfaces/people';
-
-class People implements PeopleI {
-  constructor(public name: string) { }
-  getName() {
-    return this.name;
+namespace People {
+  export interface PeopleI {
+    name: string;
+  }
+  export abstract class PeopleA implements PeopleI {
+    static cs: string = 'hello';
+    private static ids: Array<string> = [];
+    private static peoples: { [key: string]: PeopleI; } = {};
+    public name: string;
+    constructor(name: string) {
+      this.name = name;
+    }
   }
 }
 
-export { People }
+class User extends People.PeopleA {
+  name: this.cs;
+}
+
+export { PeopleI, User };
