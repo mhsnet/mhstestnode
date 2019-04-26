@@ -20,10 +20,6 @@ function taskClassesB(cb) {
     public name: string;
   }
 
-  class TestB extends TestA {
-  }
-  console.log(TestA.tests)
-
   cb();
 };
 
